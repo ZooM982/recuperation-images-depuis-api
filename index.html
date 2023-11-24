@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="App.css">
+    <script src="App.js"></script>
+    <title>Galerie d'images</title>
+</head>
+<body>
+    <div class="text-center text">
+        <h1>Quelques images qui s'affichent en mode aleatoire</h1>
+        <h3>A chaque visite, les images changent</h3>
+        <span>Vous ne verrez pas la meme image à votre retour </span>
+    </div>
+    <div class="container-fluid image" id="imagesCoprs">
+        <img class="myImg" src="https://picsum.photos/300?random=1" alt="Img1">
+        <img class="myImg" src="https://picsum.photos/300?random=2" alt="Img2">
+        <img class="myImg" src="https://picsum.photos/300?random=3" alt="Img3">
+        <img class="myImg" src="https://picsum.photos/300?random=4" alt="Img4">
+        <img class="myImg" src="https://picsum.photos/300?random=5" alt="Img5">
+        <img class="myImg" src="https://picsum.photos/300?random=6" alt="Img6">
+    </div>
+    <div class="button">
+        <button type="button" onclick="ajoutImg()" class="btn btn-success">Voir Plus</button>
+    </div>
+
+
+    <div id="myModal" class="modal">
+ 
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+       
+        <!-- Modal Content (The Image) -->
+        <img alt="tp" class="modal-content" id="img01">
+       
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>
+
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
